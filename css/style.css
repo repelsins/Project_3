@@ -41,15 +41,30 @@ header {
 
 .container {
 	margin: 0 auto;
-	width: 50%;
+	width: 100%;
 }
 
 .info-tab {
 	text-align: center;
+	margin: 0 1em 2px;
 	padding: 3em;
+	border-bottom: 3px black solid;
 }
 
 /* Form styles */
+
+fieldset {
+	border-top: 1px black solid;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+legend {
+	color: #303c48;
+	font-size: 1.2em;
+	font-weight: bold;
+}
 
 label {
 	display: block;
@@ -58,6 +73,9 @@ label {
 /* Media Queries */
 
 @media (min-width: 768px) {
+	.container {
+		width: 60%;
+	}
 	label {
 		display: block;
 	}
