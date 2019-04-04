@@ -1,0 +1,17 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+label {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	label {
+		display: block;
+	}
+}
