@@ -108,6 +108,11 @@ input[type="email"]::placeholder {
   font-size: 0.7em;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
