@@ -6,9 +6,56 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Merriweather', serif;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+h1 {
+	color: #f8f9f9;
+	font-size: 1.3em;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: .7em 0;
+}
+
+h2 {
+	color: #303c48;
+	padding: 0 0 .3em;
+}
+
+p {
+	color: #c0c4c7;
+	font-size: .9em;
+	margin: 0;
+}
+
+header {
+	background: #2d3945;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.info-tab {
+	text-align: center;
+	padding: 3em;
+}
+
+/* Form styles */
+
 label {
 	display: block;
 }
+
+/* Media Queries */
 
 @media (min-width: 768px) {
 	label {
