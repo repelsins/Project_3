@@ -92,7 +92,7 @@ legend {
 .form label,
 .other {
 	display: block;
-	margin: 2em 0 1em;
+	margin: 2em 0 1em .5em;
 	color: #55687a;
 }
 
@@ -174,6 +174,9 @@ select:focus,
 textarea:focus {
 	border: 2px #46698b solid !important;
 	outline: none;
+	transition: all 0.7s ease 0s;
+	-webkit-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
 }
 
 input[type="text"]:hover,
@@ -204,6 +207,7 @@ input[type="email"]::placeholder {
 .form label {
 	position: relative;
 	padding: 0 0 0 2em;
+	margin-left: .5em;
 	height: 1em;
 	cursor: pointer;
 }
@@ -284,7 +288,7 @@ button {
 }
 
 button:hover {
-	background: #3fd1cc;
+	background: #3faaa7;
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
