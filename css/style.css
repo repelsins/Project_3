@@ -36,6 +36,7 @@ p {
 
 footer p {
 	margin: 1em 0 4em;
+	font-size: .8em;
 	font-style: italic;
 }
 
@@ -48,16 +49,15 @@ footer {
 	text-align: center;
 }
 
-.container,
-footer {
+.container {
 	margin: 0 auto;
-	width: 100%;
+	width: 95%;
 }
 
 .info-tab {
 	text-align: center;
 	margin: 0 1em 2px;
-	padding: 3em;
+	padding: 3em 0;
 	border-bottom: 4px black solid;
 }
 
@@ -71,7 +71,7 @@ fieldset {
 	border-left: none;
 	border-right: none;
 	position: relative;
-	padding-top: 3.6em; /* Displace the absolutely positioned legend */
+	padding-top: 4.6em; /* Displace the absolutely positioned legend */
 	margin: 3px 1em 1em;
 }
 
@@ -86,7 +86,7 @@ legend {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 22px 0 0 18px;
+	padding: 40px 0 0 18px;
 }
 
 .form label,
@@ -102,7 +102,6 @@ legend {
 }
 
 .flex-outer {
-	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -116,34 +115,27 @@ legend {
 	margin-bottom: 20px;
 }
 
-.flex-outer li label,
-.flex-outer li p {
+.flex-outer li label {
 	padding: 8px;
 	color: #55687a;
 }
 
-.flex-outer > li > label,
-.flex-outer li p {
-	flex: 1 0 120px;
-	max-width: 220px;
+.flex-outer > li > label {
+	flex: 1 0 100%;
+	padding-left: 0;
 }
 
 .flex-outer > li > label + * {
 	flex: 1 0 100%;
 }
 .flex-outer > .code > label + * {
-	flex: 0 0 20%;
-}
-
-.flex-outer li p {
-	margin: 0;
+	flex: 0 0 50%;
+	max-width: 200px;
 }
 
 /* Input Styles */
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+input,
 select,
 textarea,
 button {
@@ -151,15 +143,12 @@ button {
 	padding: 12px 20px;
 	border: 2px transparent solid;
 	border-radius: 6px;
-	box-sizing: border-box;
 	transition: all 0.4s ease 0s;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+input,
 select,
 textarea {
 	background: #eff0f1;
@@ -167,9 +156,7 @@ textarea {
 	color: #a8adb2;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
+input:focus,
 select:focus,
 textarea:focus {
 	border: 2px #46698b solid !important;
@@ -179,16 +166,13 @@ textarea:focus {
 	-o-transition: all 0.7s ease 0s;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="tel"]:hover,
+input:hover,
 select:hover,
 textarea:hover {
 	border: 2px #dededf solid;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input::placeholder {
 	color: #b1b1b1;
 	text-align: right;
 	font-size: 0.7em;
@@ -282,7 +266,7 @@ button {
 	background: #4ebbb5;
 	min-height: 60px;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: bold;
 	margin-top: 2em;
 }
@@ -290,6 +274,7 @@ button {
 button:hover {
 	background: #3faaa7;
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	transition: all 0.4s ease 0s;
@@ -302,17 +287,20 @@ button:hover {
 ==================================== */
 
 @media (min-width: 768px) {
-	.container,
-	footer {
-		width: 60%;
+	.container {
+		width: 80%;
+		max-width: 800px;
+	}
+
+	.info-tab {
+		padding: 3em;
 	}
 
 	footer p {
 		margin: 1em 0 7em;
 	}
 
-	.flex-outer > li > label,
-	.flex-outer li p {
+	.flex-outer > li > label {
 		flex: 1 0 120px;
 		max-width: 220px;
 		min-width: 180px;
@@ -321,5 +309,9 @@ button:hover {
 	.flex-outer > li > label + *,
 	.flex-inner {
 		flex: 1 0 220px;
+	}
+
+	.flex-outer > .code > label + * {
+		flex: 0 0 200px;
 	}
 }
