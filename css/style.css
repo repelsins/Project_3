@@ -24,7 +24,7 @@ h1:hover {
   background: linear-gradient(90deg, transparent, #f8f9f9, transparent);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  animation: animate 2s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -289,6 +289,7 @@ button {
   font-size: 1.1em;
   font-weight: bold;
   margin-top: 2em;
+  box-shadow: inset 0px -5px 14px -4px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
