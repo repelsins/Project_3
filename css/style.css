@@ -97,7 +97,8 @@ legend {
 }
 
 .form label,
-.other {
+.other,
+label[for="other_topics"] {
   display: block;
   margin: 2em 0 1em 0;
   color: #55687a;
